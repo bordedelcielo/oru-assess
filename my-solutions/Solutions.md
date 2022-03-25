@@ -1,0 +1,1 @@
+This folder is for any extra Javascript files, CSS files, or images needed for your solution
