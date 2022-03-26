@@ -1,3 +1,13 @@
+function adblockBlocking_True() {
+    console.log('True');
+    return 'True';
+};
+
+function adblockBlocking_False() {
+    console.log('False');
+    return 'False';
+};
+
 window.addEventListener("load", function(){
     try{
         var iframe = document.createElement("iframe");
