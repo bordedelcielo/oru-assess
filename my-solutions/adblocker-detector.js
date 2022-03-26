@@ -1,6 +1,7 @@
 function adblockBlocking_True() {
     console.log('True');
-    return 'True';
+    document.getElementById('fallback').innerHTML = 
+    'Please disable your adblocker to show the virtual tour here. Alternatively, click "Launch Experience" below.';
 };
 
 function adblockBlocking_False() {
