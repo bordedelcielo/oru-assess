@@ -1,15 +1,26 @@
 function adblockBlocking_True() {
     console.log('True');
     document.getElementById('fallback').innerHTML = 
-    'Please disable your adblocker to show the virtual tour here.';
+    "Please disable your adblocker to show the virtual tour here. Alternatively, please click 'Launch Virtual Tour' below. Search tours by 'Oral Roberts University to find our tour.'";
     var thumbContainer = document.getElementById("fallback2");
     var thumbnail = document.createElement("img");
     thumbnail.onload=function() {
       thumbContainer.appendChild(thumbnail);
     }
     thumbnail.src = "https://i.pinimg.com/736x/94/fe/11/94fe11f0b2206afb6eb44275857d61e1.jpg";
-    var x = document.getElementById("ahref");
+    thumbnail.href = "https://www.youvisit.com/#/vte/";
+    console.log(thumbnail.href)
+
+    var x = document.getElementById("a");
     x.style.display = "none";
+
+    var a = document.createElement('a');
+    var linkText = document.createTextNode("Launch Virtual Tour");
+    a.appendChild(linkText);
+    a.title = "Virtual Tour";
+    a.href = "https://www.youvisit.com/#/vte/?data-platform=v&amp;data-link-type=immersive&amp;data-inst=62666&amp;data-image-width=100%&amp;data-image-height=100%&amp;";
+    document.getElementById('fallback3').appendChild(a);
+    console.log(a);
   };
 
 function adblockBlocking_False() {

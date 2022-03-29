@@ -1,12 +1,15 @@
 #fallback {
-    margin-left: 600px;
+    margin-left: 550px;
 }
 
 #fallback2 {
-    margin-top: 25px;
-    margin-left: 600px;
+    margin-left: 550px;
 }
 
 img {
     height: 500px;
+}
+
+#fallback3 {
+    margin-left: 550px;
 }
