@@ -1,12 +1,20 @@
 function adblockBlocking_True() {
     console.log('True');
     document.getElementById('fallback').innerHTML = 
-    'Please disable your adblocker to show the virtual tour here. Alternatively, click "Launch Experience" below.';
-};
+    'Please disable your adblocker to show the virtual tour here.';
+    var thumbContainer = document.getElementById("fallback2");
+    var thumbnail = document.createElement("img");
+    thumbnail.onload=function() {
+      thumbContainer.appendChild(thumbnail);
+    }
+    thumbnail.src = "https://i.pinimg.com/736x/94/fe/11/94fe11f0b2206afb6eb44275857d61e1.jpg";
+    var x = document.getElementById("ahref");
+    x.style.display = "none";
+  };
 
 function adblockBlocking_False() {
     console.log('False');
-    return 'False';
+    return False
 };
 
 window.addEventListener("load", function(){

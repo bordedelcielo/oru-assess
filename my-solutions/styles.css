@@ -1,3 +1,12 @@
 #fallback {
-    margin-top: 100px;
+    margin-left: 600px;
+}
+
+#fallback2 {
+    margin-top: 25px;
+    margin-left: 600px;
+}
+
+img {
+    height: 500px;
 }
